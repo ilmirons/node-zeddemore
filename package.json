@@ -1,0 +1,26 @@
+{
+  "name": "churchill",
+  "version": "0.0.1-alpha",
+  "description": "File-conf wrapper around winston",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec --compilers coffee:coffee-script",
+    "prepublish": "coffee -c src -o lib"
+  },
+  "keywords": [
+    "log",
+    "winston",
+    "logging"
+  ],
+  "author": "Andrea Mirone <andreamirone@gmail.com>",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "chai": "~1.8.0",
+    "coffee-script": "~1.6.3"
+  },
+  "dependencies": {
+    "winston": "~0.7.2",
+    "underscore": "~1.5.2"
+  }
+}
