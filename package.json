@@ -1,11 +1,11 @@
 {
-  "name": "churchill",
+  "name": "zeddemore",
   "version": "0.0.1-alpha",
   "description": "File-conf wrapper around winston",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ilmirons/node-churchill.git"
+    "url": "https://github.com/ilmirons/node-zeddemore.git"
   },
   "scripts": {
     "test": "mocha -R spec --compilers coffee:coffee-script",

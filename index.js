@@ -1,1 +1,1 @@
-module.exports = require(__dirname + '/lib/churchill.js');
+module.exports = require(__dirname + '/lib/zeddemore.js');
