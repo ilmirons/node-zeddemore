@@ -16,40 +16,42 @@ At startup the module reads the specified file in the main directory of the proj
 
 
         {
-	"levels": {
-                "foo": 0,
-                "bar": 1,
-                "baz": 2,
-                "foobar": 3
-           },
-           "colors: {
+
+            "colors": {
                 "foo": "blue",
                 "bar": "green",
                 "baz": "yellow",
                 "foobar": "red"
-           },
-	"loggers": {
+            },
+            "loggers": {
                 "myLogger": {
-                     "transports": {
-                          "File": {
-                               "filename": "somefile.log",
-                               "level": "foobar",
-                               "label": "foo"
-                          },
-                          "console": {
-                               "colorize": true
-                          }
-                      }],
-	          "exitOnError": false
-                     "handleExceptions": true
-                 }
-	}
+                    "transports": {
+                        "file": {
+                            "filename": "somefile.log",
+                            "level": "foo",
+                            "label": "foo"
+                            "handleExceptions": true
+                        },
+                        "console": {
+                            "colorize": true
+                        }
+                    },
+                    "levels": {
+                        "foo": 0,
+                        "bar": 1,
+                        "baz": 2,
+                        "foobar": 3
+                    },
+                    "exitOnError": false
+                }
+            }
         }
 
 ### Usage example
 
-        var logMgr   = require('churchill')('logging.conf');
+        var logMgr   = require('churchill')(__dirname + '/logging.conf');
         var myLogger = logMgr.get('myLogger');
-        
+
+        // after setting level foo, as in above config
         myLogger.foo("Can you see the fnord?");
 
