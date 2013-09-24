@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec --compilers coffee:coffee-script",
-    "prepublish": "coffee -c src -o lib"
+    "prepublish": "coffee -c -o lib src"
   },
   "keywords": [
     "log",
@@ -15,12 +15,12 @@
   "author": "Andrea Mirone <andreamirone@gmail.com>",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "mocha": "~1.13.0",
-    "chai": "~1.8.0",
-    "coffee-script": "~1.6.3"
+    "mocha": "~1.13",
+    "chai": "~1.8",
+    "coffee-script": "~1.6"
   },
   "dependencies": {
     "winston": "~0.7.2",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5"
   }
 }
